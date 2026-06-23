@@ -1,0 +1,35 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.menu button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tab {
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin: 20px auto;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.word-block {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  width: 400px;
+  border-radius: 10px;
+  text-align: left;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Russe App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🇷🇺 Apprendre le russe</h1>
+
+  <!-- MENU -->
+  <div class="menu">
+    <button onclick="showTab('lessons')">📘 Leçons</button>
+    <button onclick="showTab('training')">🎯 Entraînement</button>
+  </div>
+
+  <!-- LEÇONS -->
+  <div id="lessons" class="tab">
+    <h2>Le vocabulaire</h2>
+    <div id="vocabList"></div>
+  </div>
+
+  <!-- ENTRAÎNEMENT -->
+  <div id="training" class="tab" style="display:none;">
+    <div class="controls">
+      <button onclick="startFlashcards()">Flashcards</button>
+      <button onclick="startQuiz()">Quiz</button>
+      <button onclick="showErrors()">🎯 Anciennes erreurs</button>
+    </div>
+  <select onchange="changeCategory(this.value)">
+    <option value="all">Tous les thèmes</option>
+    <option value="maison">Maison</option>
+    <option value="nourriture">Nourriture</option>
+    <option value="famille">Famille</option>
+    <option value="ville">Ville</option>
+    <option value="temps">Temps</option>
+    <option value="école">École</option>
+    <option value="verbes">Verbes</option>
+  </select>
+
+
+    <div id="app"></div>
+  </div>
+
+  <script src="vocab.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
